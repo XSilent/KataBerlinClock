@@ -2,7 +2,7 @@ var assert = require('assert');
 
 var Clock = require("../app/clock.js").Clock;
 
-describe('Start', function(){
+describe('Berlin Clock', function(){
 
 	// ----------------------------------------------------------------------------------------
 	// hour row 1
@@ -154,6 +154,4 @@ describe('Start', function(){
 			assert.equal('O', clock.getSeconds());
 		});
 	})
-
-
 });

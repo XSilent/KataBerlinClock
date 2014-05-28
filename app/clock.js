@@ -38,6 +38,10 @@ var Clock = function(input)
 		return outputStr;
 	};
 
+	/**
+	 *
+	 * @returns {string}
+	 */
 	this.getHourRow2 = function()
 	{
 		var hour = _time.substring(0, 2);
@@ -120,11 +124,15 @@ var Clock = function(input)
 		return outputStr;
 	};
 
+	/**
+	 *
+	 * @returns {string}
+	 */
 	this.getTime = function()
 	{
 		var displayStr = '';
 
-			displayStr = '\n' + this.getSeconds() + '\n';
+		displayStr = '\n' + this.getSeconds() + '\n';
 		displayStr += this.getHourRow1() + '\n';
 		displayStr += this.getHourRow2() + '\n';
 		displayStr += this.getMinutesRow1() + '\n';
