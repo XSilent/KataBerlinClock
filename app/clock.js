@@ -1,4 +1,20 @@
-
+/**
+ * Berlin Clock
+ *
+ * Kata, written at Coding Dojo Berlin, 28 May 2014
+ * http://www.meetup.com/Agile-Developers-Berlin/
+ *
+ * Background Kata:
+ * http://en.wikipedia.org/wiki/Mengenlehreuhr
+ *
+ * Pair programming with:
+ *  - Isabel
+ *  - Katharina
+ *  - Micha (XSilent)
+ *
+ * @param input
+ * @constructor
+ */
 var Clock = function(input)
 {
 	var _time = input;
@@ -106,16 +122,9 @@ var Clock = function(input)
 
 	this.getTime = function()
 	{
-		var display = [];
-
-		display.push( this.getSeconds() );
-		display.push( this.getHourRow1() );
-		display.push( this.getHourRow2() );
-		display.push( this.getMinutesRow1() );
-		display.push( this.getMinutesRow2() );
-
 		var displayStr = '';
-		displayStr = '\n' + this.getSeconds() + '\n';
+
+			displayStr = '\n' + this.getSeconds() + '\n';
 		displayStr += this.getHourRow1() + '\n';
 		displayStr += this.getHourRow2() + '\n';
 		displayStr += this.getMinutesRow1() + '\n';
@@ -123,19 +132,6 @@ var Clock = function(input)
 
 		return displayStr;
 	};
-
-	function turnYellowToRedMarker(str, marker)
-	{
-		for(var i=0;i<str.length;i) {
-
-
-			if (str[i] == 'Y') {
-
-			}
-		}
-
-		return str;
-	}
 
 	/**
 	 *
